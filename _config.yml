@@ -1,0 +1,5 @@
+# GitHub Pages (Jekyll): serve the generated HTML as-is, don't publish sources/notes.
+exclude:
+  - README.md
+  - DATA_SAFETY.md
+  - _src
