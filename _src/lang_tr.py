@@ -1,6 +1,6 @@
 L = {
 "code": "tr", "htmllang": "tr", "name": "Türkçe",
-"date": "27 Eylül 2026",
+"date": "30 Eylül 2026",
 "ui": {
     "home": "Ana sayfa", "privacy": "Gizlilik", "terms": "Kullanım koşulları", "delete": "Veri silme",
     "menu": "Sayfalar", "language": "Dil", "effective": "Yürürlük tarihi", "contact": "İletişim",
@@ -17,6 +17,7 @@ L = {
     "Hesap veya giriş yok. Oyun sunucumuz ve oyuncu veritabanımız yoktur.",
     "İlerlemeniz, kafeniz, cüzdanınız ve ayarlarınız yalnızca cihazınızda saklanır.",
     "Oyunda Google AdMob reklamları vardır: isteğe bağlı ödüllü videolar ve bölümler arasında ara sıra tam ekran reklamlar (“Reklamsız” satın alımı bunları kaldırır). Google, yasanın gerektirdiği yerlerde izninize bağlı olarak cihazınızın reklam kimliğini kullanabilir.",
+    "iOS'ta oyun, Instagram ve Facebook reklamlarımızın kaç oyuncu getirdiğini ölçebilmemiz için Meta'nın SDK'sını içerir. Giriş için kullanılmaz ve reklam göstermez.",
     "Uygulama içi satın alımları Google Play veya Apple App Store işler. Ödeme bilgilerinizi hiçbir zaman görmeyiz.",
     "Oyunu silmek, cihazınızda saklanan her şeyi siler: bkz. <a href=\"%DELETE_LINK%\">Verilerinizi silin</a>.",
 ],
@@ -28,40 +29,44 @@ L = {
 <p>Oyun ücretsizdir ve Google AdMob reklamlarıyla desteklenir. <b>Ödüllü reklamlar</b> her zaman isteğe bağlıdır: yalnızca oyun içi bir ödül için izlemeye dokunduğunuzda oynar. İlerleyen bölümlerde oyun, <b>bölümler arasında ara sıra tam ekran reklam</b> da gösterebilir; “Reklamsız” satın alımı bunları kapatır. Reklamları göstermek, ölçmek, kişiselleştirmek ve dolandırıcılığı önlemek için AdMob; cihazınızın reklam kimliğini (Android Reklam Kimliği / Apple IDFA), diğer cihaz tanımlayıcılarını, IP adresinizi (yaklaşık konum bundan türetilir), cihaz ve uygulama bilgilerini, reklam etkileşim verilerini ve tanılama verilerini toplayabilir ve işleyebilir. Android'de oyun, AdMob'un reklam kimliğini okuyabilmesi için <code>AD_ID</code> iznini beyan eder; bu kimliği cihaz ayarlarınızdan sıfırlayabilir veya silebilirsiniz.</p>
 <h3>c) İzin (Google UMP) ve Uygulama İzleme Şeffaflığı</h3>
 <p>Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre'de oyun, kişiselleştirilmiş reklamlardan önce Google'ın Kullanıcı Mesajlaşma Platformu (UMP) aracılığıyla izninizi ister; reddederseniz Google yine kişiselleştirilmemiş veya sınırlı reklamlar gösterebilir ve oyun aynı şekilde çalışır. ABD eyalet gizlilik yasalarının uygulandığı yerlerde UMP, vazgeçme (opt-out) imkânı da sunar. Seçiminiz cihazınızda saklanır ve gerektiği yerlerde gösterilen <i>Ayarlar › Gizlilik seçenekleri</i> üzerinden istediğiniz zaman değiştirilebilir. iOS'ta reklam kimliği yalnızca Apple'ın Uygulama İzleme Şeffaflığı penceresinde izin verirseniz kullanılır. Daha fazla bilgi: <a href="%G_PARTNER%">Google, hizmetlerini kullanan site ve uygulamalardaki bilgileri nasıl kullanır</a> ve <a href="%G_PRIV%">Google Gizlilik Politikası</a>.</p>
-<h3>d) Uygulama içi satın alımlar</h3>
+<h3>d) iOS'ta reklam ölçümü (Meta)</h3>
+<p>Oyunu Instagram ve Facebook'taki reklamlarla tanıtıyoruz. Bu reklamların ne kadar işe yaradığını ölçmek için oyunun iOS sürümü, Meta Platforms Ireland Ltd. ve Meta Platforms, Inc. tarafından sağlanan Meta (Facebook) SDK'sını içerir. Oyunu yükleyip açtığınızda SDK, Meta'ya yükleme ve uygulama açılışları gibi uygulama olaylarını cihaz bilgileriyle (cihaz modeli, işletim sistemi ve uygulama sürümü) ve IP adresinizle birlikte gönderir. Reklam kimliğiniz (IDFA) yalnızca Apple'ın Uygulama İzleme Şeffaflığı penceresinde izlemeye izin verirseniz eklenir; aksi halde Apple'ın SKAdNetwork'ü ve Meta'nın Aggregated Event Measurement (toplu etkinlik ölçümü) özelliği, Meta'nın sizi tanımlamadan reklamlardan gelen yüklemeleri saymasını sağlar. Biz yalnızca toplu kampanya istatistiklerini alırız, sizi tanımlayan hiçbir veriyi almayız. Oyun Facebook ile giriş kullanmaz ve Android sürümü Meta SDK'sını içermez. Daha fazla bilgi: <a href="%META_PRIV%">Meta Gizlilik Politikası</a>.</p>
+<h3>e) Uygulama içi satın alımlar</h3>
 <p>Oyun isteğe bağlı uygulama içi satın alımlar sunar (ör. Reklamsız, Başlangıç Paketi, bahşiş paketleri ve zor bölüm teklifi). Ödemeler tamamen Google Play veya Apple App Store tarafından, Unity In-App Purchasing aracılığıyla işlenir; kart veya banka bilgilerinizi hiçbir zaman almayız. Oyun, satın aldığınızı teslim etmek, iki kez teslim etmemek ve “Reklamsız”ı daha sonra geri yüklemek için yalnızca mağazanın satın alma onayını (ürün kimliği, sipariş/işlem kimliği ve satın alma tarihi) alır. Bu kayıt cihazınızda kalır.</p>
-<h3>e) Oyun motorunun teknik verileri</h3>
+<h3>f) Oyun motorunun teknik verileri</h3>
 <p>Oyun Unity motoruyla geliştirilmiştir. Unity Analytics kullanmıyoruz ve oyun çökme raporu göndermez. Unity motorunun kendisi, <a href="%U_PRIV%">Unity'nin gizlilik politikasında</a> açıklandığı gibi, sınırlı teknik bilgileri (ör. cihaz modeli, işletim sistemi, motor sürümü ve bir kurulum kimliği) Unity Technologies'e gönderebilir.</p>
-<h3>f) Bizimle iletişime geçtiğinizde</h3>
+<h3>g) Bizimle iletişime geçtiğinizde</h3>
 <p>Bize e-posta gönderirseniz e-posta adresinizi ve mesajınızın içeriğini alırız; bunları yalnızca size yanıt vermek için kullanırız.</p>
-<h3>g) Toplamadıklarımız</h3>
+<h3>h) Toplamadıklarımız</h3>
 <p>Adınızı, e-posta adresinizi (bize yazmadıkça), telefon numaranızı, rehberinizi, fotoğraf veya dosyalarınızı, hassas konumunuzu, kamera veya mikrofon verilerinizi toplamayız. Oyunda sohbet, sosyal özellik, skor tablosu ve bulut kaydı yoktur.</p>"""),
 ("İşleme amaçları ve hukuki sebepler", """<ul>
 <li><b>Oyunun çalışması</b> (yerel kayıt, satın alımların teslimi ve geri yüklenmesi): bir sözleşmenin kurulması veya ifasıyla doğrudan ilgili olması (KVKK md. 5/2-c; GDPR md. 6/1-b).</li>
 <li><b>Kişiselleştirilmiş reklamlar</b>: gerektiği yerlerde açık rızanız (KVKK md. 5/1; GDPR md. 6/1-a). Rızanızı istediğiniz zaman geri alabilirsiniz. Kişiselleştirilmemiş reklamlar, reklam ölçümü ve dolandırıcılığın önlenmesi: ücretsiz bir oyunu finanse etmedeki meşru menfaatimiz (KVKK md. 5/2-f; GDPR md. 6/1-f).</li>
+<li><b>iOS'ta Meta ile reklam ölçümü</b>: reklam kimliğinize bağlanan her şey için Uygulama İzleme Şeffaflığı üzerinden verdiğiniz rıza; bunun dışında, Apple'ın gizliliği koruyan SKAdNetwork'ünü kullanarak hangi reklamların oyuncu getirdiğini bilmedeki meşru menfaatimiz (KVKK md. 5/1 ve 5/2-f; GDPR md. 6/1-a ve f).</li>
 <li><b>Taleplerinizin yanıtlanması ve hukuki yükümlülükler</b>: hukuki yükümlülük ve meşru menfaat (KVKK md. 5/2-ç ve f; GDPR md. 6/1-c ve f).</li>
 </ul>
 <p>Verileriniz, sizin hakkınızda hukuki veya benzeri önemli sonuç doğuran otomatik kararlar için kullanılmaz. Veriler, oyundaki SDK'lar aracılığıyla otomatik yollarla toplanır.</p>"""),
 ("Verilerin aktarıldığı taraflar", """<ul>
 <li><b>Google</b> (AdMob ve Kullanıcı Mesajlaşma Platformu), yukarıda açıklandığı şekilde. Kişiselleştirilmiş reklamlar için Google, topladığı verilerin bağımsız veri sorumlusudur. Bkz. <a href="%G_PRIV%">Google Gizlilik Politikası</a>.</li>
+<li><b>Meta Platforms</b> (iOS sürümündeki Meta SDK'sı), yukarıda açıklandığı şekilde reklam ölçümü için. Bkz. <a href="%META_PRIV%">Meta Gizlilik Politikası</a>.</li>
 <li>İndirme, güncelleme ve satın alımlar için kendi gizlilik politikaları kapsamında <b>Google Play / Apple</b>.</li>
 <li>Yukarıda açıklanan sınırlı motor verileri için <b>Unity Technologies</b>.</li>
 <li>Yalnızca yasanın gerektirdiği durumlarda <b>yetkili kurumlar</b>.</li>
 </ul>
-<p>Kişisel verilerinizi para karşılığında satmayız. Bazı ABD eyalet yasalarına (ör. Kaliforniya) göre AdMob'un kişiselleştirilmiş reklam göstermesi, bağlamlar arası davranışsal reklamcılık için “paylaşım” sayılabilir; 7. bölümde anlatıldığı gibi vazgeçebilirsiniz.</p>"""),
-("Yurt dışına aktarım", """<p>Google, Apple ve Unity verileri ABD dahil ülkeniz dışındaki sunucularda işleyebilir. Türkiye'den yapılan aktarımlar KVKK md. 9'daki mekanizmalara (ör. standart sözleşmeler), AB'den yapılanlar Avrupa Komisyonu Standart Sözleşme Hükümleri gibi uygun güvencelere dayanır.</p>"""),
+<p>Kişisel verilerinizi para karşılığında satmayız. Bazı ABD eyalet yasalarına (ör. Kaliforniya) göre AdMob'un kişiselleştirilmiş reklam göstermesine veya Meta'nın iOS'ta reklam kimliğinizi reklam ölçümü için kullanmasına izin vermek, bağlamlar arası davranışsal reklamcılık için “paylaşım” sayılabilir; 7. bölümde anlatıldığı gibi vazgeçebilirsiniz.</p>"""),
+("Yurt dışına aktarım", """<p>Google, Apple, Meta ve Unity verileri ABD dahil ülkeniz dışındaki sunucularda işleyebilir. Türkiye'den yapılan aktarımlar KVKK md. 9'daki mekanizmalara (ör. standart sözleşmeler), AB'den yapılanlar Avrupa Komisyonu Standart Sözleşme Hükümleri gibi uygun güvencelere dayanır.</p>"""),
 ("Saklama süreleri", """<ul>
 <li><b>Cihazdaki veriler</b>: oyunu silene veya depolamasını temizleyene kadar.</li>
 <li><b>Destek e-postaları</b>: talebiniz sonuçlandıktan sonra en fazla 12 ay (yasa daha uzun bir süre öngörmedikçe).</li>
-<li><b>Reklam ve mağaza verileri</b>: Google ve Apple tarafından kendi politikalarına göre saklanır.</li>
+<li><b>Reklam ve mağaza verileri</b>: Google, Meta ve Apple tarafından kendi politikalarına göre saklanır.</li>
 </ul>"""),
 ("Seçenekleriniz ve haklarınız", """<p>KVKK md. 11 uyarınca kişisel verilerinizin işlenip işlenmediğini öğrenme, işlenmişse bilgi talep etme, işlenme amacını ve amacına uygun kullanılıp kullanılmadığını öğrenme, yurt içinde veya yurt dışında aktarıldığı üçüncü kişileri bilme, eksik veya yanlış işlenmişse düzeltilmesini, silinmesini veya yok edilmesini isteme, bu işlemlerin aktarılan üçüncü kişilere bildirilmesini isteme, münhasıran otomatik sistemlerle analiz sonucu aleyhinize bir sonuç çıkmasına itiraz etme ve kanuna aykırı işleme nedeniyle zarara uğramanız hâlinde zararın giderilmesini talep etme haklarına sahipsiniz. AB/BK kullanıcıları GDPR kapsamındaki haklara, ABD eyaletlerinde yaşayanlar ise bilme, silme, düzeltme ve “satış/paylaşım”dan vazgeçme haklarına sahiptir.</p>
 <p>Oyun verilerinizi yalnızca cihazınızda tuttuğu ve bir oyuncu veritabanımız olmadığı için bu verilerin çoğunu doğrudan siz kontrol edersiniz (bkz. <a href="%DELETE_LINK%">Verilerinizi silin</a>). Diğer tüm talepler için %EMAIL% adresine yazın. En geç 30 gün içinde yanıt veririz.</p>
-<p><b>Reklamlar:</b> reklam izninizi oyunda <i>Ayarlar › Gizlilik seçenekleri</i> üzerinden (gösterildiği yerlerde) değiştirebilir, reklam kimliğinizi cihaz ayarlarından sıfırlayabilir veya silebilir, reklamları <a href="%G_ADS%">Reklam Merkezim</a>'den yönetebilirsiniz. iOS'ta Ayarlar › Gizlilik ve Güvenlik › İzleme'den izlemeyi kapatabilirsiniz.</p>
+<p><b>Reklamlar:</b> reklam izninizi oyunda <i>Ayarlar › Gizlilik seçenekleri</i> üzerinden (gösterildiği yerlerde) değiştirebilir, reklam kimliğinizi cihaz ayarlarından sıfırlayabilir veya silebilir, reklamları <a href="%G_ADS%">Reklam Merkezim</a>'den yönetebilirsiniz. iOS'ta Ayarlar › Gizlilik ve Güvenlik › İzleme'den izlemeyi kapatabilirsiniz. Bu, Meta SDK'sının olayları reklam kimliğinize bağlamasını da engeller.</p>
 <p>Ayrıca veri koruma otoritesine şikâyette bulunabilirsiniz (Türkiye: <a href="%KVKK%">Kişisel Verileri Koruma Kurumu</a>; AB/AEA: <a href="%EDPB%">otoriteler listesi</a>).</p>"""),
 ("Verilerinizi silme", """<p>Oyunu silmek veya depolamasını temizlemek, oyunun cihazınızda sakladığı tüm verileri kaldırır. Bizde kopyası yoktur. Ayrıntılar: <a href="%DELETE_LINK%">Verilerinizi silin</a>.</p>"""),
 ("Çocuklar", """<p>%GAME% 13 yaş ve üzeri oyuncular içindir ve 13 yaşından küçük çocuklara yönelik değildir. ABD Çocukların Çevrimiçi Gizliliğini Koruma Yasası (COPPA) doğrultusunda 13 yaşından küçük çocuklardan bilerek kişisel veri toplamayız. Ebeveyn veya vasiyseniz ve 13 yaşından küçük çocuğunuzun oyunu kullandığını düşünüyorsanız %EMAIL% adresinden bize ulaşın. Yerel yasanın veri işlemeye rıza için daha yüksek bir yaş öngördüğü yerlerde (bazı AB ülkelerinde 16'ya kadar), bu yaşın altındaki oyuncular kişiselleştirilmiş reklamlara yalnızca ebeveyn izniyle onay vermelidir.</p>"""),
-("Güvenlik", """<p>Google ve uygulama mağazalarıyla alınıp verilen veriler aktarım sırasında şifrelenir (HTTPS/TLS). Cihazınızdaki veriler, işletim sisteminizin koruduğu uygulamaya özel depolamada tutulur. Oyunun işlediği veriyi en aza indiriyoruz.</p>"""),
+("Güvenlik", """<p>Google, Meta ve uygulama mağazalarıyla alınıp verilen veriler aktarım sırasında şifrelenir (HTTPS/TLS). Cihazınızdaki veriler, işletim sisteminizin koruduğu uygulamaya özel depolamada tutulur. Oyunun işlediği veriyi en aza indiriyoruz.</p>"""),
 ("Politikadaki değişiklikler", """<p>Oyun değiştikçe bu politikayı güncelleyebiliriz. Yukarıdaki yürürlük tarihini değiştiririz; önemli değişiklikleri oyun içinde veya mağaza sayfasında duyururuz.</p>"""),
 ("İletişim", """<p>Synverse — %EMAIL%<br>Lütfen konu satırına “%GAME%” yazın.</p>"""),
 ],
@@ -97,7 +102,7 @@ L = {
 <p>Bu işlem ilerlemenizi, kafenizi, bahşişlerinizi, güçlendiricilerinizi, ayarlarınızı ve reklam izni tercihinizi kalıcı olarak siler. Geri alınamaz.</p>"""),
 ("Silinecek bir hesap yok", """<p>Oyun hesap oluşturmadığı ve ilerlemenizi hiçbir sunucuya göndermediği için silmemiz gereken bir hesap veya bulut verisi yoktur. Oyunu cihazınızdan silmek, oyunun sakladığı her şeyi siler.</p>"""),
 ("Satın alımlar", """<p>Satın alma geçmişiniz mağaza hesabınız altında Google Play veya Apple App Store tarafından tutulur ve onların politikalarına tabidir. Yeniden kurulumdan sonra “Reklamsız” geri yüklenebilir (iOS: Ayarlar veya Dükkân'daki “Satın alımları geri yükle”; Android: otomatik).</p>"""),
-("Reklam verileri", """<p>Reklamlar için kullanılan veriler Google'ın kontrolündedir. Reklam kimliğinizi sıfırlamak veya silmek için cihaz ayarlarınızı kullanın (Android: Ayarlar › Gizlilik › Reklamlar; iOS: Ayarlar › Gizlilik ve Güvenlik › İzleme). Google reklam verilerinizi <a href="%G_ADS%">Reklam Merkezim</a>'den yönetebilirsiniz.</p>"""),
+("Reklam verileri", """<p>Reklamlar için kullanılan veriler Google'ın kontrolündedir. Reklam kimliğinizi sıfırlamak veya silmek için cihaz ayarlarınızı kullanın (Android: Ayarlar › Gizlilik › Reklamlar; iOS: Ayarlar › Gizlilik ve Güvenlik › İzleme). Google reklam verilerinizi <a href="%G_ADS%">Reklam Merkezim</a>'den yönetebilirsiniz. iOS'ta Meta, Gizlilik Politikamızda açıklandığı şekilde reklam ölçümü verileri alır; Meta ile ilgili seçenekleriniz için <a href="%META_PRIV%">Meta Gizlilik Politikası</a>'na bakın.</p>"""),
 ("Diğer talepler", """<p>Bize e-posta gönderdiyseniz ve bu yazışmanın silinmesini istiyorsanız ya da başka bir gizlilik talebiniz varsa, <b>“%GAME% – veri talebi”</b> konusuyla %EMAIL% adresine yazın. En geç 30 gün içinde yanıt veririz.</p>"""),
 ],
 },

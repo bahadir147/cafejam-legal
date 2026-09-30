@@ -24,6 +24,7 @@ LINKS = {
     "%U_PRIV%": "https://unity.com/legal/game-player-and-app-user-privacy-policy",
     "%U_LEGAL%": "https://unity.com/legal/privacy-policy",
     "%G_PRIV%": "https://policies.google.com/privacy",
+    "%META_PRIV%": "https://www.facebook.com/privacy/policy/",
     "%G_PARTNER%": "https://policies.google.com/technologies/partner-sites",
     "%G_ADS%": "https://myadcenter.google.com/",
     "%APPLE_EULA%": "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
