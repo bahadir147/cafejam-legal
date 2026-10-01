@@ -1,3 +1,5 @@
+> **Moved:** these pages now live at https://synversegames.app/legal/cafejam/ — every page here redirects there (canonical + meta refresh). Edit the copy in the synversegames website (website/legal), not this repo; a rebuild with `_src/build.py` would drop the redirects.
+
 # Café Jam legal site
 
 Static site for **Café Jam** (Synverse, `com.synverse.cafejam`). Three documents, each in 7 languages (en default, tr, es, pt-BR, fr, de, id):
